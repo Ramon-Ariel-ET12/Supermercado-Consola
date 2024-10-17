@@ -12,7 +12,7 @@ using src.Persistence;
 namespace src.Persistence.Migrations
 {
     [DbContext(typeof(SuperMercadoDbContext))]
-    [Migration("20241017063249_FirstMigration")]
+    [Migration("20241017194851_FirstMigration")]
     partial class FirstMigration
     {
         /// <inheritdoc />

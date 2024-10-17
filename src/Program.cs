@@ -23,17 +23,20 @@ while (continuar)
             continuar = false;
             break;
         case 2:
-            supermercado = new();
+            _ = new Supermercado();
             break;
         case 3:
-            supermercado.GestionarArticulo();
+            Supermercado.GestionarArticulo();
             break;
         case 4:
+            Supermercado.GestionarArticuloStock();
+            break;
         case 5:
         case 6:
         case 7:
         default:
             Console.WriteLine("\nPor favor, elija una de las opciones");
+            Thread.Sleep(1000);
             break;
     }
 }

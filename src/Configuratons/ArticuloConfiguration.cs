@@ -14,6 +14,5 @@ public class ArticuloConfiguration : IEntityTypeConfiguration<Articulo>
         builder.Property(x => x.Descripcion).HasColumnName("Descripcion").IsRequired();
         builder.Property(x => x.Precio).HasColumnName("Precio").IsRequired();
 
-
     }
 }

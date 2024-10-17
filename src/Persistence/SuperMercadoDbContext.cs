@@ -24,6 +24,6 @@ public class SuperMercadoDbContext : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseMySql("Host=localhost;Database=SuperMercado;Username=root;Password=root;", new MySqlServerVersion(new Version(8, 0, 39)));
+        optionsBuilder.UseMySql("Host=localhost;Database=5to_SuperMercado;Username=5to_agbd;Password=Trigg3rs!;", new MySqlServerVersion(new Version(8, 0, 39)));
     }
 }

@@ -1,34 +1,11 @@
-﻿namespace src.Models;
+﻿using src.Persistence;
 
-class ArticuloVenta
+namespace src.Models;
+
+public class ArticuloVenta
 {
-    private Articulo articulo;
-    private int cantidad;
-
-    public ArticuloVenta(Articulo articulo, int cantidad)
-    {
-        this.articulo = articulo;
-        this.cantidad = cantidad;
-    }
-
-    public Articulo ARTICULO
-    {
-        get { return this.articulo; }
-    }
-
-    public int CANTIDAD
-    {
-        get { return this.cantidad; }
-        set { this.cantidad = value; }
-    }
-
-    public double MONTO
-    {
-        get { return this.CalcularMonto();}
-    }
-
-    private double CalcularMonto()
-    {
-        return this.articulo.PRECIO * this.cantidad;
-    }
+    public int IdArticuloVenta { get; set; }
+    public Articulo Articulo { get; set; }
+    public int Cantidad { get; set; }
+    
 }
